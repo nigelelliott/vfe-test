@@ -4,8 +4,11 @@ import './SearchBar.css';
 
 const SearchBar = ({ onChange }: SearchBarProps) => (
   <div className="search-bar">
-    <div className="search-bar__label">Filter body type: </div>
+    <label className="search-bar__label" htmlFor="filter">
+      Filter body type:{' '}
+    </label>
     <input
+      id="filter"
       type="search"
       className="search-bar__input"
       onChange={onChange}
