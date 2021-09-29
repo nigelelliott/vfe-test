@@ -140,15 +140,21 @@ const Carousel = ({ data }: CarouselProps) => {
               <div className="carousel__slide-model-name">{modelName}</div>
               <div className="carousel__slide-model-type">{modelType}</div>
               <img
-                src={imageUrl}
+                src={`/vfe-test/${imageUrl}`}
                 alt={`${modelName} ${modelType}`}
                 className="carousel__slide-image"
               />
               <div className="carousel__slide-links">
-                <a href={`/learn/${id}`} className="carousel__slide-link">
+                <a
+                  href={`/vfe-test/learn/${id}`}
+                  className="carousel__slide-link"
+                >
                   Learn
                 </a>
-                <a href={`/shop/${id}`} className="carousel__slide-link">
+                <a
+                  href={`/vfe-test/shop/${id}`}
+                  className="carousel__slide-link"
+                >
                   Shop
                 </a>
               </div>

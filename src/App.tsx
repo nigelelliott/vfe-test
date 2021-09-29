@@ -14,7 +14,7 @@ function App() {
   const originalData = useRef(data);
 
   const fetchData = useCallback(async () => {
-    const response = await fetch('/api/cars.json');
+    const response = await fetch('/vfe-test/api/cars.json');
     const json = await response.json();
     originalData.current = json;
 
