@@ -141,6 +141,7 @@
 @media (min-width: 768px) {
   .carousel__slide {
     min-width: calc(25vw - 20px);
+    width: calc(25vw - 20px);
   }
 
   .carousel__indicators {

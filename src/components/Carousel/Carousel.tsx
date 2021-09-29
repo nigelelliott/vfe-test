@@ -17,6 +17,10 @@ const Carousel = ({ data }: CarouselProps) => {
 
   const navigate = useCallback(
     (direction: 'previous' | 'next') => {
+      if (data.length <= VISIBLE_SLIDES_DESKTOP) {
+        return;
+      }
+
       let scrollIndex = currentIndex;
 
       if (direction === 'previous' && currentIndex > 0) {
@@ -55,6 +59,15 @@ const Carousel = ({ data }: CarouselProps) => {
     [containerRef]
   );
 
+  const resetPosition = useCallback(() => {
+    if (containerRef.current && containerRef.current.children.length > 0) {
+      containerRef.current.children[0].scrollIntoView({
+        behavior: 'smooth',
+        inline: 'start',
+      });
+    }
+  }, [containerRef]);
+
   const navigatePrevious = useCallback(() => navigate('previous'), [navigate]);
   const navigateNext = useCallback(() => navigate('next'), [navigate]);
 
@@ -87,6 +100,8 @@ const Carousel = ({ data }: CarouselProps) => {
       });
     }
 
+    resetPosition();
+
     return () => {
       if (container) {
         Array.from(container.children).forEach((node) => {
@@ -94,7 +109,7 @@ const Carousel = ({ data }: CarouselProps) => {
         });
       }
     };
-  }, [data]);
+  }, [data, resetPosition]);
 
   return (
     <section

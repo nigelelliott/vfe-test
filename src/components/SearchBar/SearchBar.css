@@ -1,0 +1,23 @@
+.search-bar {
+  align-items: center;
+  background-color: var(--color-grey3);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.search-bar__label {
+  color: var(--color-grey1);
+  font-size: 12px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.search-bar__input {
+  border: 1px solid var(--color-grey2);
+  border-radius: 15px;
+  height: 30px;
+  outline: none;
+  padding: 5px 10px;
+}
