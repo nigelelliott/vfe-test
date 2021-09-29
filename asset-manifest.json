@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/vfe-test/static/css/main.750e4596.chunk.css",
+    "main.js": "/vfe-test/static/js/main.097a5b66.chunk.js",
+    "main.js.map": "/vfe-test/static/js/main.097a5b66.chunk.js.map",
+    "runtime-main.js": "/vfe-test/static/js/runtime-main.9a88a4eb.js",
+    "runtime-main.js.map": "/vfe-test/static/js/runtime-main.9a88a4eb.js.map",
+    "static/js/2.b1732e7d.chunk.js": "/vfe-test/static/js/2.b1732e7d.chunk.js",
+    "static/js/2.b1732e7d.chunk.js.map": "/vfe-test/static/js/2.b1732e7d.chunk.js.map",
+    "index.html": "/vfe-test/index.html",
+    "static/css/main.750e4596.chunk.css.map": "/vfe-test/static/css/main.750e4596.chunk.css.map",
+    "static/js/2.b1732e7d.chunk.js.LICENSE.txt": "/vfe-test/static/js/2.b1732e7d.chunk.js.LICENSE.txt",
+    "static/media/Carousel.css": "/vfe-test/static/media/chevron-small.292394dd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a88a4eb.js",
+    "static/js/2.b1732e7d.chunk.js",
+    "static/css/main.750e4596.chunk.css",
+    "static/js/main.097a5b66.chunk.js"
+  ]
+}
