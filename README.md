@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Description
+
+A simple product carousel based on the [Volvo Cars Front-end coding test requirements](https://github.com/volvo-cars/god-frontend-code-test)
+
+[View Demo](https://nigelelliott.github.io/vfe-test/index.html)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
